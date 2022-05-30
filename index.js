@@ -10,7 +10,7 @@ global.logger = require('./logger')
 // hello world, test git
 app.use(async (ctx, next) => {
     logger.debug('test hello world')
-    ctx.body = 'hello world'
+    ctx.body = 'hello beautiful world'
 })
 
 app.listen(3000)

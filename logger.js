@@ -19,6 +19,11 @@ class Logger {
     error(str) {
         console.error(str)
     }
+
+    save(str) {
+        const fs = require('fs')
+        fs.writeFile('./temp.txt', Buffer.from(str))
+    }
 }
 
 module.exports = new Logger()
